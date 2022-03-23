@@ -2,38 +2,65 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mood Jorts</title>
-  <link rel="stylesheet" href="/style.css">
-  <script src="spa.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Jorts</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/4982236842.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
+<header>
     <h1>Mood Jorts</h1>
     <form class="formNoDefault">
-      <button class="buttonAddImage">
-        Add Image
-      </button>
-      <button class="buttonHeaderGearIcon">
-        ⚙️
-      </button>
+        <button class="buttonAddImage">
+            Add Image
+        </button>
+        <button class="buttonHeaderGearIcon">
+            ⚙️
+        </button>
     </form>
-  </header>
+</header>
 
-  <main>
+<main>
+
+<!--    <div class="card size7 editCard" id="02329">-->
+<!--        <div class="ModifyDiv">-->
+<!--            <div class="cardTopHalf">-->
+<!--                <span class="button editButton"><i class="fa-solid fa-pen-to-square"></i></span>-->
+<!--                <span class="button makeItAbsoluteButton"><i class="fa-solid fa-arrows-up-down-left-right"></i></span>-->
+<!--                <span class="button deleteButton"><i class="fa-solid fa-trash-can"></i></span>-->
+<!--            </div>-->
+<!--            <div class="magnifyDiv">-->
+<!--                <span class="button zoomInButton"><i class="fa-solid fa-magnifying-glass-plus"></i></span>-->
+<!--                <span class="button zoomOutButton"><i class="fa-solid fa-magnifying-glass-minus"></i></span>-->
+<!--            </div>-->
+<!--            <div class="moveDiv">-->
+<!--                <span class="button moveToLeftButton"><i class="fa-solid fa-circle-arrow-left"></i></span>-->
+<!--                <span class="button moveToRightButton"><i class="fa-solid fa-circle-arrow-right"></i></span>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"-->
+<!--             alt="">-->
+<!--    </div>-->
+
+
     <form class="newPicture formNoDefault displayNone">
-      <div>
-        <input type="url" id="newPicUrl" name="newPicUrl">
-      </div>
-      <div>
-        <button class="addPicture buttonApproveAdd">Add</button>
-        <button class="closeForm buttonCancelAdd">Cancel</button>
-      </div>
+        <div>
+            <input type="url" id="newPicUrl" name="newPicUrl">
+        </div>
+        <div>
+            <button class="addPicture buttonApproveAdd">Add</button>
+            <button class="closeForm buttonCancelAdd">Cancel</button>
+        </div>
     </form>
-  </main>
+</main>
+
+<script type="module" src="/js/modules/app.js"></script>
 
 </body>
 

@@ -10,7 +10,7 @@
   --dark: #1D2B26;
   --med: #2D3B36;
   --light: #39574C;
-  --lightest: #475650;
+  --lightest: rgb(49, 51, 53);
 
   --cellSize: 30px;
 }
@@ -75,7 +75,7 @@ main form.newPicture input {
 
 
 
-
+/* Card */
 
 main .card {
   display: flex;
@@ -88,20 +88,16 @@ main .card {
 
 }
 
+/* Card's top half is for: delete button, modify button */
 
-main .card .cardTopHalf {
+.cardTopHalf {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-grow: 2;
   flex-shrink: 2;
   height: 100%;
 }
-
-main .card.editCard .cardTopHalf {
-  height: 66%;
-}
-
-
 
 main .card img {
   border-radius: 3px;
@@ -109,42 +105,90 @@ main .card img {
   height: 100%;
 }
 
+main .card .magnifyDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 2em;
+  text-align: center;
+  width: 20%;
+  height: 50%;
+  background: rgba(128, 128, 128, 0.66);
+  color: var(--dark);
+  border-radius: 6px;
+}
 
+main .card .moveDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 1.7em;
+  width: 40%;
+  height: 17%;
+  background: rgba(57, 87, 76, 0.4);
+  color: var(--darkest);
+}
 
+main .card .cardTopHalf .editButton {
+  margin-left: 7px;
+  font-size: 1.7em;
+  color: var(--light);
+}
 
-main .card .modifyDiv .cardEditButton img {
-  height: 100%;
-  width: auto;
+main .card .cardTopHalf .deleteButton {
+  margin-right: 7px;
+  font-size: 1.7em;
+  color: #880000;
+}
+
+main .card .cardTopHalf .makeItAbsoluteButton {
+  font-size: 1.7em;
+  color: var(--light);
+}
+
+main .card .cardTopHalf .makeItNormalButton {
+  font-size: 1.7em;
+  color: var(--light);
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+main .card.editCard {
+  height: 70%;
+  width: 90%;
+}
+
+main .card.absoluteCard {
+  position: absolute;
+  z-index: 1;
+  cursor: move;
 }
 
 
-
-
-    
-    
-main .card .filterDiv {
-  display: none;
-}
-
-
-  
-
-
+/*Not sure what these are doing yet */
+/*main .card .ModifyDiv .cardEditButton img {*/
+/*  height: 100%;*/
+/*  width: auto;*/
+/*}*/
+/*    */
+/*main .card .filterDiv {*/
+/*  display: none;*/
+/*}*/
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+/* Non-absolute card sizes */
 
 main .card.size1 {
   grid-area: span 1 / span 1;
@@ -180,4 +224,10 @@ main .card.size8 {
 
 main .card.size9 {
   grid-area: span 9 / span 9;
+}
+
+/* show/hide class */
+
+.displayNone {
+  display: none;
 }
