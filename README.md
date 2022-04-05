@@ -3,7 +3,7 @@
 
 ## Notes from Student to Grader
 
-** *When you hand in the assignment, replace this sentence with a short intro to your project-to-be-graded.  Include comments on what grading target you believe you have achieved.* **
+** *I'm aiming for the Exemplary level excluding the SVGs* **
 
 
 ## Introduction
