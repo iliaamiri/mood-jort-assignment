@@ -44,7 +44,7 @@ header h1 {
 main {
   margin: 1%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--cellSize), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--cellSize), max-content));
   grid-auto-rows: var(--cellSize);
   position: relative;
 }
@@ -85,7 +85,6 @@ main .card {
   border: 1px solid black;
   border-radius: 4px;
   background-color: var(--lightest);
-
 }
 
 /* Card's top half is for: delete button, modify button */
@@ -150,11 +149,13 @@ main .card .cardTopHalf .deleteButton {
 main .card .cardTopHalf .makeItAbsoluteButton {
   font-size: 1.7em;
   color: var(--light);
+  margin-left: 2%;
 }
 
 main .card .cardTopHalf .makeItNormalButton {
   font-size: 1.7em;
   color: var(--light);
+  margin-left: 2%;
 }
 
 .button:hover {
